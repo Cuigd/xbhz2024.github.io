@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扫码看打印教程</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            line-height: 1.6; 
+            background-color: #f9f9f9; 
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 20px auto; 
+            padding: 20px; 
+            background: #fff; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            border-radius: 8px; 
+            overflow: hidden; /* 解决微信浏览器可能导致的溢出问题 */
+        }
+        h1, h2 { 
+            color: #333; 
+            text-align: center;
+        }
+        p { 
+            margin: 10px 0; 
+        }
+        a { 
+            color: #007BFF; 
+            text-decoration: none; 
+        }
+        a:hover { 
+            text-decoration: underline; 
+        }
+        .note {
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* 让按钮在手机端和PC端都居中 */
+        .button-container {
+            text-align: center; /* 兼容微信端 */
+            margin: 20px auto; /* 确保按钮居中 */
+            width: 100%; /* 避免微信浏览器错误扩展 */
+        }
+        
+        .download-button {
+            width: 85%; /* 让按钮占据合适宽度，避免超出 */
+            max-width: 320px; /* 限制最大宽度，防止溢出 */
+            height: 50px;
+            line-height: 50px;
+            font-size: 18px;
+            text-align: center;
+            color: white;
+            background-color: green;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box; /* 解决微信端 padding 计算错误 */
+        }
+        
+        .download-button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>扫码看打印教程</h1>
+        <h2 style="color: red; font-weight: bold;">视频中的软件点击下方链接按钮即可下载</h2>
+
+        <div class="button-container">
+            <button class="download-button" onclick="copyAndRedirect('https://wwqa.lanzouq.com/iwu1W17fmu0b')">点击下载</button>
+        </div>
+
+        <script>
+            function copyAndRedirect(link) {
+                navigator.clipboard.writeText(link).then(() => {
+                    alert("链接已复制到剪贴板！");
+                }).catch(err => {
+                    alert("复制失败，请手动复制链接：" + link);
+                });
+                window.open(link, "_blank");
+            }
+        </script>
+
+        <p>如果是 <span class="note">微信扫码</span>，请复制上述网址并粘贴到浏览器下载</p>
+        <p>软件下载完成后，<span class="note">往下滑</span>，可查看打印文件和图片的教程</p>
+        <p><span class="note">注意：软件是免费的并且没有广告，如果下载的软件收费或者有广告请联系客服重新下载</span></p>
+
+        <h2><strong>打印测试页教程</strong></h2>
+        <iframe 
+            src="//player.bilibili.com/player.html?isOutside=true&bvid=BV1emCGYrERK&cid=27488616676&p=1" 
+            frameborder="0" 
+            allowfullscreen 
+            style="width: 100%; height: calc(100vw * 16 / 9); max-height: 640px; border: none;">
+        </iframe>
+
+        <h2><strong>打印文件教程 ~ WPS文件</strong></h2>
+        <iframe 
+            src="//player.bilibili.com/player.html?isOutside=true&aid=113701340321803&bvid=BV1WtCGYsEtK&cid=27489208778&p=1" 
+            frameborder="0" 
+            allowfullscreen 
+            style="width: 100%; height: calc(100vw * 16 / 9); max-height: 640px; border: none;">
+        </iframe>
+
+        <h2><strong>打印图片教程</strong></h2>
+        <iframe 
+            src="//player.bilibili.com/player.html?isOutside=true&aid=113701340387438&bvid=BV1CtCGYsEde&cid=27489274817&p=1" 
+            frameborder="0" 
+            allowfullscreen 
+            style="width: 100%; height: calc(100vw * 16 / 9); max-height: 640px; border: none;">
+        </iframe>
+
+        <h2 style="color: red; font-weight: bold;">点击下载2</h2>
+        <div class="button-container">
+            <button class="download-button" onclick="copyAndRedirect('https://www.pgyer.com/app/build/80848ff881b4ffff4c9525262ebd7413')">点击下载2</button>
+        </div>
+
+        <h2 style="color: red; font-weight: bold;">点击下载3</h2>
+        <div class="button-container">
+            <button class="download-button" onclick="copyAndRedirect('https://www.51pgzs.com/app/47928.html')">点击下载3</button>
+        </div>
+
+        <h1>温馨提示</h1>
+        <p>请购买专用连接线，普通 OTG 连接线可能导致打印速度变慢、延迟或卡顿等故障。</p>
+    </div>
+</body>
+</html>
