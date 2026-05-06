@@ -1,43 +1,63 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打印盒子使用教程</title>
+    <style>
+        body { 
+            font-size: 18px;
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            line-height: 1.6; 
+            background-color: #f9f9f9; 
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 20px auto; 
+            padding: 20px; 
+            background: #fff; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            border-radius: 8px; 
+            overflow: hidden;
+        }
+        h1, h2 { 
+            color: #333; 
+            text-align: center;
+            font-size: 26px; 
+        }
+        iframe {
+            width: 100%; 
+            height: calc(100vw * 16 / 9); 
+            max-height: 640px; 
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>打印盒子使用教程</h1>
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+        <h2>大文件打印方法</h2>
+        <iframe 
+            src="//player.bilibili.com/player.html?isOutside=true&aid=116524828334210&bvid=BV1QsRWBREd2&cid=38118362570&p=1" 
+            scrolling="no" 
+            border="0" 
+            frameborder="no" 
+            framespacing="0" 
+            allowfullscreen="true">
+        </iframe>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+        <h2>初次配网及打印方法</h2>
+        <iframe 
+            src="//player.bilibili.com/player.html?isOutside=true&aid=116524828335062&bvid=BV1XsRWBREMk&cid=38118425499&p=1" 
+            scrolling="no" 
+            border="0" 
+            frameborder="no" 
+            framespacing="0" 
+            allowfullscreen="true">
+        </iframe>
+    </div>
+</body>
+</html>
