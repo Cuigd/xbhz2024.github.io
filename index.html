@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小白学习app使用教程</title>
+    <title>打印盒子使用教程</title>
     <style>
         body { 
             font-size: 18px;
@@ -20,88 +20,44 @@
             background: #fff; 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
             border-radius: 8px; 
-            overflow: hidden; /* 解决微信浏览器可能导致的溢出问题 */
+            overflow: hidden;
         }
         h1, h2 { 
             color: #333; 
             text-align: center;
             font-size: 26px; 
         }
-        p { 
-            margin: 10px 0; 
-            font-size: 20px;
-        }
-        a { 
-            color: #007BFF; 
-            text-decoration: none; 
-        }
-        a:hover { 
-            text-decoration: underline; 
-        }
-        .note {
-            color: red;
-            font-weight: bold;
-            font-size: 22px;
-        }
-
-        /* 让按钮在手机端和PC端都居中 */
-        .button-container {
-            text-align: center; /* 兼容微信端 */
-            margin: 20px auto; /* 确保按钮居中 */
-            width: 100%; /* 避免微信浏览器错误扩展 */
-        }
-        
-        .download-button {
-            width: 85%; /* 让按钮占据合适宽度，避免超出 */
-            max-width: 320px; /* 限制最大宽度，防止溢出 */
-            height: 50px;
-            line-height: 50px;
-            font-size: 18px;
-            text-align: center;
-            color: white;
-            background-color: green;
+        iframe {
+            width: 100%; 
+            height: calc(100vw * 16 / 9); 
+            max-height: 640px; 
             border: none;
-            border-radius: 10px;
-            text-decoration: none;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            box-sizing: border-box; /* 解决微信端 padding 计算错误 */
-        }
-        
-        .download-button:hover {
-            background-color: darkgreen;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>小白学习APP使用教程</h1>
-        <p><span class="note">开始使用之前先去应用商店下载一个《小白学习打印APP》用APP配网更方便</span></p>
-        <p>【下方有两段视频一定要看完在操作】</p>
+        <h1>打印盒子使用教程</h1>
 
-        <h2><strong>小白学习APP使用</strong></h2>
+        <h2>大文件打印方法</h2>
         <iframe 
-            src="//player.bilibili.com/player.html?isOutside=true&aid=113960346981289&bvid=BV1fBNxe6EUF&cid=28254865177&p=1" 
-            frameborder="0" 
-            allowfullscreen 
-            style="width: 100%; height: calc(100vw * 16 / 9); max-height: 640px; border: none;">
+            src="//player.bilibili.com/player.html?isOutside=true&aid=116524828334210&bvid=BV1QsRWBREd2&cid=38118362570&p=1" 
+            scrolling="no" 
+            border="0" 
+            frameborder="no" 
+            framespacing="0" 
+            allowfullscreen="true">
         </iframe>
 
-        <h2><strong>小白学习APP广告问题说明</strong></h2>
+        <h2>初次配网及打印方法</h2>
         <iframe 
-            src="//player.bilibili.com/player.html?isOutside=true&aid=113960346980595&bvid=BV1fBNxe6EYb&cid=28254929464&p=1" 
-            frameborder="0" 
-            allowfullscreen 
-            style="width: 100%; height: calc(100vw * 16 / 9); max-height: 640px; border: none;">
+            src="//player.bilibili.com/player.html?isOutside=true&aid=116524828335062&bvid=BV1XsRWBREMk&cid=38118425499&p=1" 
+            scrolling="no" 
+            border="0" 
+            frameborder="no" 
+            framespacing="0" 
+            allowfullscreen="true">
         </iframe>
-
-        <p>按照下方指示图点开绑定账户把账号发给客服可以帮助关闭广告推送【免9.9周三统一关闭】</p>
-        <p style="text-align: center;">
-            <img src="https://github.com/user-attachments/assets/634d81ab-42b8-4dad-a695-b51d4a9fa6eb" alt="操作指示图" style="max-width: 100%; height: auto;">
-        </p>
-        <p><span class="note">如果连不上可以添加售后微信视频教您安装:</span></p>
-        <p><span class="note">13592355637(同微信)</span></p>
-
     </div>
 </body>
 </html>
